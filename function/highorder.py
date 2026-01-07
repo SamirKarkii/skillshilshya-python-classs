@@ -4,8 +4,6 @@
 
 
 
-
-
 # def logger(func):
 #     def wrapper(*args, **kwargs):
 #         print(f"Function {func.__name__} is called with arguments {args} and {kwargs}")
@@ -53,8 +51,6 @@
 #     return samir()
 
 # asmin("don")
-
-
 
 # def add(a,b):
 #     return a+b
@@ -127,8 +123,8 @@
 #filter out the dictionary items based on some condition like 'name' key greater than 3
 "----------------------------------------------------------"
 
-#reduce function:
-from functools import reduce 
+# #reduce function:
+# from functools import reduce 
 # def add(x,y):
 #     return x+y
 
@@ -137,12 +133,49 @@ from functools import reduce
 # print(sum_of_numbers)
 "------------------------------------------------------"
 #Find the maximum number from the list using redce function 
-def add(x,y):
-    if x>y:
-        return x
-    else:
-        return y
+# def add(x,y):
+#     if x>y:
+#         return x
+#     else:
+#         return y
 
-numbers = [1,2,3,4,5]
-sum_of_numbers = reduce(add,numbers)
-print(sum_of_numbers)
+# numbers = [1,2,3,4,5]
+# sum_of_numbers = reduce(add,numbers)
+# print(sum_of_numbers)
+
+# def example(x):
+#     print("hello world")
+#     return x+'example'
+# print(example(1))
+
+#what is lambda function 
+#lambda function is not defined as usual
+#ANYNOMONOUS , ONE LINE FUNC
+#Simple lamba function to add
+
+# add = lambda x,y: x+y
+# result = add(1,3)
+# print(result)
+
+
+# numbers = [1,2,3,4,5]
+
+# sq_numbers = map(square, numbers)
+# print(sq_numbers) #iterator hunxha 
+# print(list(sq_numbers)) #then does conversion (itreable )
+"""----------------------------------------------------------------------------------------------------------------"""
+# def logger(func):
+#     def wrapper(*args, **kwargs):
+#         print(f"Function {func.__name__} is called with arguments {args} and {kwargs}")
+#         result = func(*args, **kwargs)
+#         print(f"Function {func.__name__} returned {result}")
+#         return result
+#     return wrapper
+
+# @logger
+# def rev_string(samir):
+#     return samir[::-1]
+
+# print(rev_string('samir'))
+
+
